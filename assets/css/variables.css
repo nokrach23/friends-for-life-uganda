@@ -1,0 +1,20 @@
+:root {
+  --green: #144201;
+  --green-dark: #0f3302;
+  --red: #dc3d3a;
+  --red-dark: #c72f2c;
+  --charcoal: #181818;
+  --charcoal-soft: #202020;
+  --white: #fff;
+  --gray-50: #f8f8f6;
+  --gray-500: #6b6b6b;
+  --border: #e5e5e5;
+  --shadow-sm: 0 8px 24px rgb(20 66 1 / 8%);
+  --shadow-lg: 0 20px 60px rgb(0 0 0 / 16%);
+  --radius-sm: .5rem;
+  --radius: 1rem;
+  --radius-lg: 1.5rem;
+  --container: 1200px;
+  --header-height: 80px;
+  --transition: 220ms ease;
+}

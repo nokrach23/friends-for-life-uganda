@@ -1,0 +1,5 @@
+.story-band{overflow:hidden}.story-band .two-col{grid-template-columns:1fr 1fr}
+.faith-statement{position:relative}.faith-statement::before{position:absolute;top:0;left:50%;width:80px;height:5px;background:var(--red);content:"";transform:translateX(-50%)}
+.mission-vision{grid-template-columns:1fr 1fr}.mission-vision article{padding:clamp(2rem,5vw,4rem);border-radius:var(--radius);background:var(--green);color:var(--white)}.mission-vision article:last-child{background:var(--charcoal)}.mission-vision p{color:rgb(255 255 255 / 78%)}
+.featured-project{padding:clamp(2rem,5vw,4rem);border-radius:var(--radius-lg);background:var(--green-dark);color:var(--white)}.featured-project .two-col{grid-template-columns:1fr 1fr}.featured-project p{color:rgb(255 255 255 / 78%)}
+.process-list{counter-reset:steps;margin:0;padding:0;list-style:none}.process-list li{position:relative;padding:0 0 2rem 4rem}.process-list li::before{position:absolute;left:0;width:2.7rem;height:2.7rem;display:grid;place-items:center;border-radius:50%;background:var(--red);color:var(--white);font-weight:800;counter-increment:steps;content:counter(steps)}
