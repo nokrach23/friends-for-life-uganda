@@ -74,6 +74,14 @@
 .blog-card .card__image {
   aspect-ratio: 16 / 10;
 }
+.blog-card {
+  position: relative;
+}
+.blog-card__link::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
 .blog-card__meta {
   margin-bottom: 0.75rem;
   color: var(--red);
@@ -116,4 +124,24 @@
   background: var(--white);
   font-size: 0.82rem !important;
   font-style: italic;
+}
+.story-post-hero__back {
+  display: block;
+  width: max-content;
+  margin-bottom: 2rem;
+  color: var(--green-dark);
+  font-weight: 700;
+}
+.story-post {
+  max-width: 860px;
+}
+.story-post__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+.story-post .story-article__body {
+  margin-inline: auto;
 }
