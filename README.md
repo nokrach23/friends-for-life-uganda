@@ -5,7 +5,7 @@ A production-minded, mobile-first HTML/CSS/JavaScript prototype for a Christ-cen
 ## Structure
 
 ```text
-index.html / about.html / projects.html / get-involved.html / contact.html
+index.html / about.html / our-story.html / projects.html / get-involved.html / contact.html
 assets/css/       design tokens, base styles, components, page and responsive styles
 assets/js/        navigation, animations/counters, forms, shared behavior
 assets/images/    future local images

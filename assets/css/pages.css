@@ -68,3 +68,52 @@
   counter-increment: steps;
   content: counter(steps);
 }
+.blog-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.blog-card .card__image {
+  aspect-ratio: 16 / 10;
+}
+.blog-card__meta {
+  margin-bottom: 0.75rem;
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.story-article {
+  scroll-margin-top: 8rem;
+}
+.story-article__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+.story-article__header {
+  align-self: start;
+  position: sticky;
+  top: 8.5rem;
+}
+.story-article__body {
+  max-width: 760px;
+}
+.story-article__body p,
+.story-article__body blockquote {
+  font-size: 1.05rem;
+}
+.story-article__body blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  border-left: 5px solid var(--red);
+  color: var(--green-dark);
+  font-weight: 600;
+}
+.story-article__notice {
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  font-size: 0.82rem !important;
+  font-style: italic;
+}

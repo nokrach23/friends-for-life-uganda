@@ -94,6 +94,13 @@
   .mission-vision {
     grid-template-columns: 1fr;
   }
+  .blog-grid,
+  .story-article__layout {
+    grid-template-columns: 1fr;
+  }
+  .story-article__header {
+    position: static;
+  }
   .story {
     grid-template-columns: 1fr;
   }

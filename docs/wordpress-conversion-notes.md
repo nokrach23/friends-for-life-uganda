@@ -10,6 +10,7 @@ Create a custom child theme (or a purpose-built custom theme where no stable par
 | Shared footer/back-to-top            | `footer.php`                            |
 | `index.html`                         | `front-page.php`                        |
 | `about.html`                         | `page-about.php`                        |
+| `our-story.html`                     | Blog index (`home.php`)                 |
 | `projects.html`                      | `page-projects.php` and project archive |
 | `get-involved.html`                  | `page-get-involved.php`                 |
 | `contact.html`                       | `page-contact.php`                      |
