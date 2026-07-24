@@ -11,7 +11,7 @@
   --border: #e5e5e5;
   --shadow-sm: 0 8px 24px rgb(20 66 1 / 8%);
   --shadow-lg: 0 20px 60px rgb(0 0 0 / 16%);
-  --radius-sm: .5rem;
+  --radius-sm: 0.5rem;
   --radius: 1rem;
   --radius-lg: 1.5rem;
   --container: 1200px;

@@ -4,18 +4,18 @@
 
 Create a custom child theme (or a purpose-built custom theme where no stable parent exists) with reusable template parts and no page builder.
 
-| Static source | WordPress destination |
-|---|---|
-| Shared top bar/header/navigation | `header.php` |
-| Shared footer/back-to-top | `footer.php` |
-| `index.html` | `front-page.php` |
-| `about.html` | `page-about.php` |
-| `projects.html` | `page-projects.php` and project archive |
-| `get-involved.html` | `page-get-involved.php` |
-| `contact.html` | `page-contact.php` |
-| Repeated cards/CTAs/stats | `template-parts/` |
-| Enqueued CSS/JS and theme support | `functions.php` |
-| Theme metadata/minimum global styles | `style.css` |
+| Static source                        | WordPress destination                   |
+| ------------------------------------ | --------------------------------------- |
+| Shared top bar/header/navigation     | `header.php`                            |
+| Shared footer/back-to-top            | `footer.php`                            |
+| `index.html`                         | `front-page.php`                        |
+| `about.html`                         | `page-about.php`                        |
+| `projects.html`                      | `page-projects.php` and project archive |
+| `get-involved.html`                  | `page-get-involved.php`                 |
+| `contact.html`                       | `page-contact.php`                      |
+| Repeated cards/CTAs/stats            | `template-parts/`                       |
+| Enqueued CSS/JS and theme support    | `functions.php`                         |
+| Theme metadata/minimum global styles | `style.css`                             |
 
 Register primary and footer WordPress menus and replace duplicated static links with `wp_nav_menu()`. Add Custom Logo support and source images from the Media Library with responsive attachment functions. Enqueue Poppins locally where privacy/performance policy requires it.
 
