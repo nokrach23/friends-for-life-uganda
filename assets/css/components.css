@@ -471,13 +471,17 @@
   color: rgb(255 255 255 / 70%);
 }
 .footer .footer__logo {
-  width: max-content;
-  padding: 0.55rem 0.8rem;
-  border-radius: var(--radius-sm);
-  background: var(--white);
+  width: 220px;
+  height: 135px;
+  padding: 0;
+  overflow: hidden;
+  background: var(--charcoal);
 }
-.footer .footer__logo .logo__image {
-  width: 185px;
+.footer .footer__logo .footer__logo-image {
+  width: 220px;
+  max-height: none;
+  transform: translateY(-50px) scale(1.7);
+  transform-origin: center;
 }
 .footer h3 {
   font-size: 1rem;
