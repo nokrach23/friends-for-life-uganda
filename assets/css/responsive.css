@@ -11,6 +11,9 @@
   .approach-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .targets__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -145,6 +148,7 @@
   .values-grid,
   .leadership-grid,
   .approach-grid,
+  .targets__grid,
   .stats {
     grid-template-columns: 1fr;
   }
