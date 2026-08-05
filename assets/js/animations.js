@@ -8,7 +8,8 @@
   if (reduceMotion || !("IntersectionObserver" in window)) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
     counters.forEach((counter) => {
-      counter.textContent = `${counter.dataset.counter}${counter.dataset.suffix || ""}`;
+      const target = Number(counter.dataset.counter);
+      counter.textContent = `${target.toLocaleString()}${counter.dataset.suffix || ""}`;
     });
     return;
   }
@@ -36,7 +37,10 @@
         const duration = 1400;
         const tick = (now) => {
           const progress = Math.min((now - start) / duration, 1);
-          element.textContent = `${Math.floor(target * (1 - Math.pow(1 - progress, 3)))}${suffix}`;
+          const currentValue = Math.floor(
+            target * (1 - Math.pow(1 - progress, 3)),
+          );
+          element.textContent = `${currentValue.toLocaleString()}${suffix}`;
           if (progress < 1) requestAnimationFrame(tick);
         };
         requestAnimationFrame(tick);

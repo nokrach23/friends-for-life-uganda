@@ -338,18 +338,21 @@
   font-size: 0.9rem;
 }
 .targets__grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 900px;
+  margin-inline: auto;
 }
-.target-card {
+.target-stat {
   position: relative;
-  padding: 2rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--white);
   box-shadow: var(--shadow-sm);
+  text-align: center;
 }
-.target-card::before {
+.target-stat::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -358,13 +361,18 @@
   background: var(--green);
   content: "";
 }
-.target-card__number {
-  display: inline-block;
-  margin-bottom: 1.25rem;
+.target-stat__number {
+  display: block;
+  margin-bottom: 0.75rem;
   color: var(--red);
-  font-size: 0.82rem;
+  font-size: clamp(3rem, 7vw, 5rem);
   font-weight: 800;
-  letter-spacing: 0.12em;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.target-stat h3 {
+  margin-bottom: 1rem;
+  color: var(--green-dark);
 }
 .targets__note {
   max-width: 760px;
