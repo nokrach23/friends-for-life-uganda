@@ -471,17 +471,17 @@
   color: rgb(255 255 255 / 70%);
 }
 .footer .footer__logo {
-  width: 220px;
-  height: 135px;
+  width: 210px;
+  height: auto;
   padding: 0;
-  overflow: hidden;
-  background: var(--charcoal);
+  overflow: visible;
 }
 .footer .footer__logo .footer__logo-image {
-  width: 220px;
+  width: 210px;
+  height: auto;
   max-height: none;
-  transform: translateY(-50px) scale(1.7);
-  transform-origin: center;
+  object-fit: contain;
+  transform: none;
 }
 .footer h3 {
   font-size: 1rem;
